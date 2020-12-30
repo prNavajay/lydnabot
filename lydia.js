@@ -70,4 +70,8 @@ client.on("message", async message => {
 })
 });
 
+setInterval(async () => {
+  await fetch('https://hushed-cheddar-juice.glitch.me').then(console.log('Pinged!'))
+}, 240000)
+
 client.login(config.token)
